@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style4.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <title> University Design</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo2.jpg"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                       <li><a href="">HOME</a></li>
+                       <li><a href="">ABOUT</a></li>
+                       <li><a href="">COURSE</a></li>
+                       <li><a href="">BLOG</a></li>
+                       <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()""></i>
+            </nav>
+            <div class="test-box">
+                <h1>WORLD'S GREATEST UNIVERSITY</h1>
+                <p>This university provides numerous advantages to students, including high-quality education, a wide range of academic programs, intellectual stimulation, access to resources, networking opportunities, personal development, cultural exposure, and career prospects. These benefits contribute to the holistic growth and preparation of students for their future endeavors.</p>
+                <a href="" class="hero-btn"> Visit us to know more</a>
+            </div>
+        </section>
+        <!-------course-->
+        <section class="course">
+            <h1 class="title"><ul><span style="color: cadetblue;">COURSES</span> <span style="color: aquamarine;">WE </span> <span style="color: darkcyan;">OFFER</span></ul></h1>
+            <p>We offer a variety of short courses that can be done within a month</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Web Development Course</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+                <div class="course-col">
+                    <h3>Data Science Courses</h3>
+                    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+                <div class="course-col">
+                    <h3>Machine Learning & AI</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+            </div>
+        </section>
+        <!------campus-->
+        <section class="campus">
+            <h1 class="camps">OUR GLOBAL CAMPUS</h1>
+            <p class="para">we are branched in every county</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="london.jpg" style="width: 100%;height: 240px;">
+                    <div class="layer">
+                        <h3>london university</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="washington.webp" style="width: 100%;height: 240px;">
+                    <div class="layer">
+                        <h3>washington university</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="newyork.webp" style="width: 100%;height: 240px;">
+                    <div class="layer">
+                        <h3>newyork university</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------javascript for toggle menu-->
+        <script>
+            var navlinks=document.getElementById("navlinks");
+
+            function showMenu(){
+                navlinks.style.right='0';
+            }
+            function hideMenu(){
+                navlinks.style.right='-200px';
+            }
+        </script>
+    </body>
+</html>
